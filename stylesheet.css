@@ -1,3 +1,21 @@
 * {
     font-family: 'Courier New', Courier, monospace;
 }
+
+.header {
+    background-color: paleturquoise;
+    margin: auto;
+}
+
+.header_left {
+    float: left;
+}
+
+.header_middle {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header_right {
+    float: right;
+}
