@@ -2,20 +2,42 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
-.header {
-    background-color: paleturquoise;
-    margin: auto;
+header {
+    background-color: #323232;
+    overflow: auto;
+    color: #C8C8C8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
 }
 
 .header_left {
-    float: left;
-}
-
-.header_middle {
-    margin-left: auto;
-    margin-right: auto;
+    size: 10mm;
 }
 
 .header_right {
-    float: right;
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    background-color: #323232;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #C8C8C8;
 }
