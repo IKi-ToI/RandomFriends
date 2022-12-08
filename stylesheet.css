@@ -1,9 +1,11 @@
     * {
         font-family: 'Courier New', Courier, monospace;
+        background-color: black;
     }
     
     header {
         background-color: #323232;
+        border-radius: 7px;
         overflow: auto;
         color: #C8C8C8;
         display: flex;
@@ -12,11 +14,29 @@
         padding: 0px 10px;
     }
     
+    header h2 {
+        background-color: #323232;
+    }
+    
+    header h1 {
+        background-color: #323232;
+    }
+    
+    header ul a {
+        background-color: #323232;
+    }
+    
+    .header_middle {
+        background-color: #323232;
+    }
+    
     .header_left {
         size: 10mm;
+        background-color: #323232;
     }
     
     .header_right {
+        background-color: #323232;
         display: flex;
         justify-content: flex-end;
     }
