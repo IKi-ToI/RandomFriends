@@ -1,97 +1,133 @@
-    * {
-        font-family: 'Courier New', Courier, monospace;
-        background-color: black;
-    }
-    
-    header {
-        background-color: #323232;
-        border-radius: 7px;
-        overflow: auto;
-        color: #C8C8C8;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0px 10px;
-    }
-    
-    header h2 {
-        background-color: #323232;
-    }
-    
-    header h1 {
-        background-color: #323232;
-    }
-    
-    header ul a {
-        background-color: #323232;
-    }
-    
-    .header_middle {
-        background-color: #323232;
-    }
-    
-    .header_left {
-        size: 10mm;
-        background-color: #323232;
-    }
-    
-    .header_right {
-        background-color: #323232;
-        display: flex;
-        justify-content: flex-end;
-    }
-    
-    ul {
-        display: flex;
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        margin: auto;
-        background-color: #323232;
-    }
-    
-    li {
-        display: flex;
-    }
-    
-    li a:hover:not(.active) {
-        background-color: #191919;
-        border-radius: 7px;
-    }
-    
-    li a {
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        color: #C8C8C8;
-        font-size: large;
-    }
-    
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        right: -152px;
-        background-color: #C8C8C8;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1;
-        margin-right: 160px;
-        flex-direction: column;
-        align-content: center;
-        border-radius: 3px;
-    }
-    
-    .dropdown-content a {
-        float: none;
-        color: black;
-        color: #323232;
-        padding-top: 5px;
-        padding-bottom: 5px;
-        text-decoration: none;
-        display: flex;
-    }
-    
-    .settings_button:hover .dropdown-content {
-        display: flex;
-    }
+:root {
+    --backgrnd-header-color: rgba(50, 50, 50);
+    --text-color-body: #C8C8C8;
+}
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+}
+
+
+/* HEADER */
+
+.header {
+    background-color: var(--backgrnd-header-color);
+    border-radius: 7px;
+    overflow: auto;
+    color: #C8C8C8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+}
+
+.header h2 {
+    background-color: var(--backgrnd-header-color);
+}
+
+.header h1 {
+    background-color: var(--backgrnd-header-color);
+}
+
+.header ul a {
+    background-color: var(--backgrnd-header-color);
+}
+
+.header_middle {
+    background-color: var(--backgrnd-header-color);
+}
+
+.header_left {
+    size: 10mm;
+    background-color: var(--backgrnd-header-color);
+}
+
+.header_right {
+    background-color: var(--backgrnd-header-color);
+    display: flex;
+    justify-content: flex-end;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin: auto;
+    background-color: var(--backgrnd-header-color);
+}
+
+li {
+    display: flex;
+    background-color: var(--backgrnd-header-color);
+}
+
+li a:hover:not(.active) {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+li a {
+    background-color: var(--backgrnd-header-color);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #C8C8C8;
+    font-size: large;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--backgrnd-header-color);
+    right: 8px;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(130, 130, 130, 0.2);
+    z-index: 1;
+    flex-direction: column;
+    align-content: center;
+    border-radius: 3px;
+    padding: 8px;
+}
+
+.dropdown-content a {
+    float: none;
+    color: #C8C8C8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-decoration: none;
+    display: flex;
+}
+
+.settings_button:hover .dropdown-content {
+    display: flex;
+}
+
+
+/* BODY */
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: var(--text-color-body)
+}
+
+.main_content {
+    margin: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: aliceblue;
+}
+
+.contact {
+    background-color: cadetblue;
+    flex: 1;
+}
+
+.feed {
+    background-color: burlywood;
+    flex: 2;
+}
